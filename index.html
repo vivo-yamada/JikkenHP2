@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実験部ホームページ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">実験部</h1>
+                <button class="mobile-menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="#home">ホーム</a></li>
+                        <li><a href="#equipment">実験設備</a></li>
+                        <li><a href="#links">リンク集</a></li>
+                        <li><a href="#regulations">部内規定</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>実験部ポータルサイト</h2>
+                    <p>実験部員のための情報集約プラットフォーム</p>
+                    <div class="quick-access">
+                        <a href="#equipment" class="card-link">
+                            <div class="card">
+                                <div class="card-icon">🔬</div>
+                                <h3>実験設備</h3>
+                                <p>設備情報・予約状況</p>
+                            </div>
+                        </a>
+                        <a href="#links" class="card-link">
+                            <div class="card">
+                                <div class="card-icon">🔗</div>
+                                <h3>リンク集</h3>
+                                <p>社内システム・関連部署</p>
+                            </div>
+                        </a>
+                        <a href="#regulations" class="card-link">
+                            <div class="card">
+                                <div class="card-icon">📋</div>
+                                <h3>部内規定</h3>
+                                <p>ルール・手順書</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipment" class="section">
+            <div class="container">
+                <h2 class="section-title">実験設備</h2>
+                <div class="search-box">
+                    <input type="text" id="equipmentSearch" placeholder="設備を検索...">
+                </div>
+                <div class="equipment-grid">
+                    <div class="equipment-card">
+                        <h3>分光光度計</h3>
+                        <div class="equipment-status available">利用可能</div>
+                        <p>UV-Vis分光光度計。波長範囲：200-800nm</p>
+                        <button class="btn-detail">詳細を見る</button>
+                    </div>
+                    <div class="equipment-card">
+                        <h3>電子顕微鏡</h3>
+                        <div class="equipment-status in-use">使用中</div>
+                        <p>走査型電子顕微鏡。倍率：10x-300,000x</p>
+                        <button class="btn-detail">詳細を見る</button>
+                    </div>
+                    <div class="equipment-card">
+                        <h3>遠心分離機</h3>
+                        <div class="equipment-status available">利用可能</div>
+                        <p>高速遠心分離機。最大回転数：15,000rpm</p>
+                        <button class="btn-detail">詳細を見る</button>
+                    </div>
+                    <div class="equipment-card">
+                        <h3>恒温槽</h3>
+                        <div class="equipment-status maintenance">メンテナンス中</div>
+                        <p>温度範囲：-20℃～100℃。精度：±0.1℃</p>
+                        <button class="btn-detail">詳細を見る</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="links" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">リンク集</h2>
+                <div class="links-container">
+                    <div class="link-category">
+                        <h3>社内システム</h3>
+                        <ul class="link-list">
+                            <li><a href="excel-viewer.html" target="_blank">社内規定ポータル</a></li>
+                            <li><a href="#" target="_blank">勤怠管理システム</a></li>
+                            <li><a href="#" target="_blank">経費精算システム</a></li>
+                            <li><a href="#" target="_blank">社内メール</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-category">
+                        <h3>福利厚生</h3>
+                        <ul class="link-list">
+                            <li><a href="#" target="_blank">食堂メニュー</a></li>
+                            <li><a href="#" target="_blank">健康管理室</a></li>
+                            <li><a href="#" target="_blank">社内イベント情報</a></li>
+                            <li><a href="#" target="_blank">福利厚生ガイド</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-category">
+                        <h3>関連部署</h3>
+                        <ul class="link-list">
+                            <li><a href="#" target="_blank">研究開発部</a></li>
+                            <li><a href="#" target="_blank">品質管理部</a></li>
+                            <li><a href="#" target="_blank">総務部</a></li>
+                            <li><a href="#" target="_blank">IT管理部</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="regulations" class="section">
+            <div class="container">
+                <h2 class="section-title">部内規定</h2>
+                <div class="regulations-grid">
+                    <div class="regulation-card">
+                        <div class="regulation-icon">⚠️</div>
+                        <h3>安全管理規定</h3>
+                        <p>実験室での安全に関する基本ルール</p>
+                        <a href="#" class="btn-link">詳細を読む →</a>
+                    </div>
+                    <div class="regulation-card">
+                        <div class="regulation-icon">🧪</div>
+                        <h3>実験手順書</h3>
+                        <p>標準的な実験プロトコルと手順</p>
+                        <a href="#" class="btn-link">詳細を読む →</a>
+                    </div>
+                    <div class="regulation-card">
+                        <div class="regulation-icon">🗓️</div>
+                        <h3>設備予約ルール</h3>
+                        <p>実験設備の予約と使用に関する規定</p>
+                        <a href="#" class="btn-link">詳細を読む →</a>
+                    </div>
+                    <div class="regulation-card">
+                        <div class="regulation-icon">♻️</div>
+                        <h3>廃棄物処理規定</h3>
+                        <p>実験廃棄物の適切な処理方法</p>
+                        <a href="#" class="btn-link">詳細を読む →</a>
+                    </div>
+                    <div class="regulation-card">
+                        <div class="regulation-icon">📝</div>
+                        <h3>報告書作成ガイド</h3>
+                        <p>実験報告書の作成基準とテンプレート</p>
+                        <a href="#" class="btn-link">詳細を読む →</a>
+                    </div>
+                    <div class="regulation-card">
+                        <div class="regulation-icon">🔐</div>
+                        <h3>機密保持規定</h3>
+                        <p>実験データと研究成果の取り扱い</p>
+                        <a href="#" class="btn-link">詳細を読む →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>実験部事務局</h3>
+                        <p>📧 Email: jikkenbu@company.co.jp</p>
+                        <p>📞 内線: 1234</p>
+                        <p>📍 場所: 研究棟3F</p>
+                        <p>🕐 受付時間: 平日 9:00-17:30</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 実験部. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
